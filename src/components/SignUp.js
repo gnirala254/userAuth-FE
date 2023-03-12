@@ -11,6 +11,33 @@ function SignUp() {
   const handleSignUp = (event) => {
     event.preventDefault();
     console.log('form', name, email, password);
+
+    fetch("http://localhost:5000/user/signup", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        password: password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+        if(data['status'] === 201){
+        setName('');
+        setEmail('');
+        setPassword('');
+        }
+      })
+      .catch((err) => {
+        console.log('err', err);
+      })
   }
 
   return (

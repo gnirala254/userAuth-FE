@@ -6,7 +6,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 
 function App() {
-    const isLoggedIn = window.localStorage.getItem("loggedIn");
+    const isLoggedIn = JSON.parse(window.localStorage.getItem("loggedIn"));
 
     return (
         <Router>
