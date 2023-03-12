@@ -1,3 +1,4 @@
+import './App.css';
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from './components/Home';
@@ -9,7 +10,7 @@ function App() {
 
     return (
         <Router>
-            <div className="App">
+            <div className="app">
                 <Routes>
                     <Route
                         exact
