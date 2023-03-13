@@ -1,9 +1,13 @@
 import './Home.css'
 import React from 'react'
+import Header from './Header'
 
 function Home() {
   return (
-    <div className='home'>Home</div>
+    <div>
+      <Header />
+      <div className='home'>Welcome to Home!</div>
+    </div>
   )
 }
 

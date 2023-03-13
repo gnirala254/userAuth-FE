@@ -1,0 +1,15 @@
+.header{
+    background-color: brown;
+    width: 100vw;
+    height: 2rem;
+}
+
+.button{
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
