@@ -29,10 +29,11 @@ function SignUp() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "userRegister");
-        if(data['status'] === 201){
-        setName('');
-        setEmail('');
-        setPassword('');
+        if (data['status'] == 201) {
+          console.log('clearing...');
+          setName('');
+          setEmail('');
+          setPassword('');
         }
       })
       .catch((err) => {

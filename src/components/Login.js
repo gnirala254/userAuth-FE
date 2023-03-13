@@ -30,7 +30,7 @@ function Login() {
         if (data['status'] === 200) {
           window.localStorage.setItem('login-token', JSON.stringify(data['token']));
           window.localStorage.setItem('loggedIn', JSON.stringify('true'))
-          navigate('/home');
+          window.location.href = '/home'
           setEmail('');
           setPassword('');
         }
