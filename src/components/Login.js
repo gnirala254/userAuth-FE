@@ -45,8 +45,8 @@ function Login() {
     <div className='container'>
       <form onSubmit={handleLogin} className="form">
         <h1>Log In</h1>
-        <input className='email' placeholder='Enter Email' type='text' onChange={(e) => { setEmail(e.target.value) }} />
-        <input className='password' placeholder='Enter Password' type='password' onChange={(e) => { setPassword(e.target.value) }} />
+        <input className='email' placeholder='Enter Email' type='text' value={email} onChange={(e) => { setEmail(e.target.value) }} />
+        <input className='password' placeholder='Enter Password' type='password' value={password} onChange={(e) => { setPassword(e.target.value) }} />
         <button className='button'>Log In</button>
         <p>New User? <Link to="/sign-up">Sign Up</Link></p>
       </form>
