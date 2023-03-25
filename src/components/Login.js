@@ -10,7 +10,7 @@ function Login() {
     event.preventDefault();
     console.log('form', email, password);
 
-    fetch("http://localhost:5000/user/login", {
+    fetch("http://localhost:5000/api/user/login", {
       method: "POST",
       crossDomain: true,
       headers: {

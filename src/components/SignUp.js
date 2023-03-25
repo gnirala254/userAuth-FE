@@ -12,7 +12,7 @@ function SignUp() {
     event.preventDefault();
     console.log('form', name, email, password);
 
-    fetch("http://localhost:5000/user/signup", {
+    fetch("http://localhost:5000/api/user/signup", {
       method: "POST",
       crossDomain: true,
       headers: {
